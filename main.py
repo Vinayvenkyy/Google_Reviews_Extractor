@@ -10,7 +10,6 @@ load_dotenv(dotenv_path='./.env')  # Explicit relative path
 
 print("+++++++++++++++++++++++++++++++++++++++++++++")
 api_key = os.getenv('SERPAPI_KEY')
-print(api_key)
 print("+++++++++++++++++++++++++++++++++++++++++++++")
 client = serpapi.Client(api_key=api_key)
 
