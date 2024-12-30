@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place ID App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            margin: 20px;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HELLO USER</h1>
+    <p>Please enter a Place ID below:</p>
+    <form method="POST">
+        <input type="text" name="place_id" placeholder="Enter Place ID" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if table_html %}
+    <h2>Results</h2>
+    <div>{{ table_html|safe }}</div>
+    {% endif %}
+</body>
+</html>
